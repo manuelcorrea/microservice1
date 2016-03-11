@@ -8,4 +8,4 @@ RUN ls -la
 RUN bundle install
 RUN sysctl net.ipv6.bindv6only
 EXPOSE 9292
-RUN bundle exec rackup --host 0.0.0.0 -p 9292 &
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "9292"]
