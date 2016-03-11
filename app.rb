@@ -10,3 +10,5 @@ require File.join(File.dirname(__FILE__), 'config', 'default')
 
 #load all controllers
 Dir[File.join(File.dirname(__FILE__), 'controllers', '*.rb')].each { |file| require file }
+
+set :bind, '0.0.0.0'

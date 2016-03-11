@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: bundle exec rackup -p 9292 -b '0.0.0.0'
+    volumes:
+      - .:/opt/service1
+    ports:
+      - "9292:9595"

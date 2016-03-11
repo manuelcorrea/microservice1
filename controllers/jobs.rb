@@ -9,3 +9,8 @@ get '/service/jobs',:provides => :json do
   ]
   JSON.pretty_generate(jobs)
 end
+
+
+get '/healthcheck' do
+  status 200
+end
